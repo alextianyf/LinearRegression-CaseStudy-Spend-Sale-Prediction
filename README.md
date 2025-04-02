@@ -7,7 +7,8 @@
 
 # Objective
 
-Our goal is to develop an accurate model that can be used to predict sales on the basis of the three media budgets.
+- This is designed as portfolio project, and mainly is designed to demonstrate the understanding of linear regression. We may not discuss the motivation of why using linear regression instead of other algorithms for this application.
+- Our goal is to develop an accurate model that can be used to predict sales on the basis of the three media budgets.
 
 # Important Questions that We Might Seek to Address
 
@@ -18,4 +19,3 @@ Our goal is to develop an accurate model that can be used to predict sales on th
 5. How accurately can we predict future sales?
 6. Is the relationship linear?
 7. Is there synergy among the advertising media?
-
