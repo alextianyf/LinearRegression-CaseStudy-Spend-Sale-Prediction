@@ -19,3 +19,30 @@
 5. How accurately can we predict future sales?
 6. Is the relationship linear?
 7. Is there synergy among the advertising media?
+
+## Environment
+
+- Check/create your own environment
+
+```bash
+pip freeze > requirements.txt
+```
+
+- Replace the requirements.txt file with provided version.
+- install with command:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 📚 Attribution & Licensing
+
+This project uses the `Advertising.csv` dataset originally featured in the book:
+
+**"An Introduction to Statistical Learning"** by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani.  
+The dataset is used here strictly for **educational and demonstration purposes**.
+
+- 📄 All code in this repository is licensed under the [MIT License](./LICENSE).
+- 📘 Notebooks and teaching materials are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), allowing you to remix, adapt, and build upon the material for any purpose, even commercially, **as long as credit is given to the original author** (Alex Tian).
+
+> If you wish to use the dataset for commercial use beyond education, please refer to the book publisher’s terms and conditions.

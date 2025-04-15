@@ -1,2 +1,3 @@
 *.csv
 /__pycache__
+/spend_sale_lib/__pycache__
