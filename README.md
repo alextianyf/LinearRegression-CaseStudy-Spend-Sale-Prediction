@@ -44,5 +44,6 @@ The dataset is used here strictly for **educational and demonstration purposes**
 
 - 📄 All code in this repository is licensed under the [MIT License](./LICENSE).
 - 📘 Notebooks and teaching materials are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), allowing you to remix, adapt, and build upon the material for any purpose, even commercially, **as long as credit is given to the original author** (Alex Tian).
+- The original materials and resources can be found in [ISL Website](https://www.statlearning.com/resources-python)
 
 > If you wish to use the dataset for commercial use beyond education, please refer to the book publisher’s terms and conditions.
