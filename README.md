@@ -1,5 +1,7 @@
 # Spend-Sale-Prediction
 
+> This is a Linear Regression portfolio project. Thus, this project focuses on <strong>Simple Linear Regression</strong> and its <strong>interpretability, foundational importance, and relevance in statistical learning</strong>. Even though it is necessary to discuss the best machine learning approach to solve this problem, this will not included in current stage, and may be discussed in the future work.
+
 - Suppose that we are statistical consultants hired by a client to investigate the association between advertising and sales of a particular product.
 - We are provided the dataset consists of the **sales** of one particular product in 200 diferent markets, along with advertising budgets for the product in each of those markets for three diferent media: **TV**, **Radio**, and **newspaper**.
 - Client has **full control** of advertising expenses in each of the three media.
