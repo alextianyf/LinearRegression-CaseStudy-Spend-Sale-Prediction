@@ -75,8 +75,10 @@ $$
 Let $S_{xx} = \sum (x_i - \bar{x})^2$, then:
 
 $$
-\hat{\beta}_1 = \beta_1 + \frac{ \sum a_i \varepsilon_i }{ S_{xx} },\quad\text{where } a_i = x_i - \bar{x}
+\hat{\beta}_1 = \beta_1 + \frac{ \sum a_i \varepsilon_i }{ S_{xx}}
 $$
+
+where $a_i = x_i - \bar{x}$
 
 **Step 2: Compute the Variance of $\beta_1$**
 
