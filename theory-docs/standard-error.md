@@ -21,9 +21,8 @@ $$
 We aim to derive the **standard error** of the OLS estimator $\hat{\beta}_1$, which is:
 
 $$
-\text{SE}(\hat{\beta}_1) = \sqrt{\operatorname{Var}(\hat{\beta}_1)}
+\text{SE}(\hat{\beta}_1) = \sqrt{\mathrm{Var}(\hat{\beta}_1)}
 $$
-
 
 **Step 1: Formula for $\beta_1$**
 
@@ -89,11 +88,11 @@ $$
 **Step 2: Compute the Variance of $\beta_1$**
 
 $$
-\operatorname{Var}(\hat{\beta}_1) = \operatorname{Var} \left( \frac{ \sum a_i \varepsilon_i }{ S_{xx} } \right)
-= \frac{1}{S_{xx}^2} \cdot \operatorname{Var} \left( \sum a_i \varepsilon_i \right)
+\mathrm{Var}(\hat{\beta}_1) = \mathrm{Var} \left( \frac{ \sum a_i \varepsilon_i }{ S_{xx} } \right)
+= \frac{1}{S_{xx}^2} \cdot \mathrm{Var} \left( \sum a_i \varepsilon_i \right)
 $$
 
-Since $\varepsilon_i \sim \text{i.i.d.}$ and $\operatorname{Var}(\varepsilon_i) = \sigma^2$:
+Since $\varepsilon_i \sim \text{i.i.d.} \text{ and } \mathrm{Var}(\varepsilon_i) = \sigma^2\text{:}$:
 
 $$
 \operatorname{Var} \left( \sum a_i \varepsilon_i \right)
@@ -103,7 +102,7 @@ $$
 Then:
 
 $$
-\operatorname{Var}(\hat{\beta}_1) = \frac{ \sigma^2 S_{xx} }{ S_{xx}^2 } = \frac{ \sigma^2 }{ S_{xx} }
+\mathrm{Var}(\hat{\beta}_1) = \frac{ \sigma^2 S_{xx} }{ S_{xx}^2 } = \frac{ \sigma^2 }{ S_{xx} }
 $$
 
 **Step 3: Final Standard Error Formula**
@@ -147,16 +146,15 @@ This formula comes from rearranging the regression line to pass through the poin
 We apply the variance formula for a linear combination of random variables:
 
 $$
-\operatorname{Var}(\hat{\beta}_0) = \operatorname{Var}(\bar{y} - \hat{\beta}_1 \bar{x})
+\mathrm{Var}(\hat{\beta}_0) = \mathrm{Var}(\bar{y} - \hat{\beta}_1 \bar{x})
 $$
 
-Since $ \bar{x} $ is constant (it's computed from the observed values), we treat it as a scalar:
+Since $\bar{x}$ is constant (it's computed from the observed values), we treat it as a scalar:
 
 $$
-= \operatorname{Var}(\bar{y}) + \bar{x}^2 \cdot \operatorname{Var}(\hat{\beta}_1)
-- 2 \cdot \bar{x} \cdot \operatorname{Cov}(\bar{y}, \hat{\beta}_1)
+= \mathrm{Var}(\bar{y}) + \bar{x}^2 \cdot \mathrm{Var}(\hat{\beta}_1)
+- 2 \cdot \bar{x} \cdot \mathrm{Cov}(\bar{y}, \hat{\beta}_1)
 $$
-
 
 **Step 3: Evaluate Each Term**
 
@@ -173,13 +171,16 @@ $$\bar{y} = \beta_0 + \beta_1 \bar{x} + \bar{\varepsilon}, \quad \text{where } \
 Therefore, the variance of $\bar{y}$ is equal to the variance of $\bar{\varepsilon}$. Because the $\varepsilon_i$’s are independent and identically distributed with variance $\sigma^2$, we use a standard result from probability:
 
 $$
-\operatorname{Var}(\bar{\varepsilon}) = \operatorname{Var} \left( \frac{1}{n} \sum_{i=1}^n \varepsilon_i \right) = \frac{1}{n^2} \sum_{i=1}^n \operatorname{Var}(\varepsilon_i) = \frac{1}{n^2} \cdot n \cdot \sigma^2 = \frac{\sigma^2}{n}
+\mathrm{Var}(\bar{\varepsilon}) = \mathrm{Var} \left( \frac{1}{n} \sum_{i=1}^n \varepsilon_i \right)
+= \frac{1}{n^2} \sum_{i=1}^n \mathrm{Var}(\varepsilon_i)
+= \frac{1}{n^2} \cdot n \cdot \sigma^2
+= \frac{\sigma^2}{n}
 $$
 
 So:
 
 $$
-\operatorname{Var}(\bar{y}) = \frac{\sigma^2}{n}
+\mathrm{Var}(\bar{y}) = \frac{\sigma^2}{n}
 $$
 
 2. Variance of $\hat{\beta}_1$
@@ -187,17 +188,17 @@ $$
 Previously derived as:
 
 $$
-\operatorname{Var}(\hat{\beta}_1) = \frac{\sigma^2}{\sum (x_i - \bar{x})^2}
+\mathrm{Var}(\hat{\beta}_1) = \frac{\sigma^2}{\sum (x_i - \bar{x})^2}
 $$
 
 Let $S_{xx} = \sum (x_i - \bar{x})^2$
 
 3. Covariance Term
 
-Under the assumption that $ \varepsilon_i $ are i.i.d. and independent of $ x_i $, it can be shown that:
+Under the assumption that $\varepsilon_i$ are i.i.d. and independent of $x_i$, it can be shown that:
 
 $$
-\operatorname{Cov}(\bar{y}, \hat{\beta}_1) = 0
+\mathrm{Cov}(\bar{y}, \hat{\beta}_1) = 0
 $$
 
 
