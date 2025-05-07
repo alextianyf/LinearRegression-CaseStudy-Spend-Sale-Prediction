@@ -57,14 +57,7 @@ $$
 Expand the numerator using linearity of summation:
 
 $$
-\hat{\beta}_1 =
-\frac{
-\beta_1 \sum (x_i - \bar{x})^2
-+ \sum (x_i - \bar{x}) \varepsilon_i
-- \sum (x_i - \bar{x}) \bar{\varepsilon}
-}{
-\sum (x_i - \bar{x})^2
-}
+\hat{\beta}_1 = \frac{\beta_1 \sum (x_i - \bar{x})^2 + \sum (x_i - \bar{x}) \varepsilon_i - \sum (x_i - \bar{x}) \bar{\varepsilon}}{\sum (x_i - \bar{x})^2}
 $$
 
 Note that $\sum (x_i - \bar{x}) = 0$, so:
