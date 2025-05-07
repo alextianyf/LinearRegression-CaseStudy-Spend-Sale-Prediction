@@ -34,7 +34,7 @@ $$
 
 We now substitute the model expression for $y_i = \beta_0 + \beta_1 x_i + \varepsilon_i$.
 
-To do this correctly, we also compute $\bar{y}$, the sample mean of all $ y_i $'s:
+To do this correctly, we also compute $\bar{y}$, the sample mean of all $y_i$'s:
 
 $$
 \bar{y} = \frac{1}{n} \sum y_i = \frac{1}{n} \sum \left( \beta_0 + \beta_1 x_i + \varepsilon_i \right)
