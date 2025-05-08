@@ -78,21 +78,21 @@ $$
    
    Let  
 
-   $$r = y - X\beta
-     = \begin{pmatrix}r_1\\\vdots\\r_n\end{pmatrix}
-   $$  
+    $$
+    r = y - X\beta = \begin{pmatrix} r_1 \\ \vdots \\ r_n \end{pmatrix}
+    $$
 
    where each residual is 
 
    $$r_i = y_i - x_i^\top\beta$$
 
-2. **Rewrite in dot‐product form**  
+1. **Rewrite in dot‐product form**  
    By definition of the transpose,
    $$
    (y - X\beta)^\top(y - X\beta) = r^\top r.
    $$
 
-3. **Expand the dot‐product**  ($\sum_{i=1}^n r_i^2$ is sum of residual square)
+2. **Expand the dot‐product**  ($\sum_{i=1}^n r_i^2$ is sum of residual square)
    
    For any vector $r$,  
    $$
@@ -101,7 +101,7 @@ $$
    = \sum_{i=1}^n r_i^2.
    $$
 
-4. **Substitute the residuals**  
+3. **Substitute the residuals**  
    Since $r_i = y_i - x_i^\top\beta$,  
    $$
    r^\top r
