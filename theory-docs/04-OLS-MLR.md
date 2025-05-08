@@ -78,7 +78,7 @@ $$
    
    Let  
 
-    $$r = y - X\beta= \begin{pmatrix} r_1\\\vdots\\r_n \end{pmatrix}$$
+   $r = y - X\beta = \begin{pmatrix} r_1 \\ \vdots \\ r_n \end{pmatrix}$
 
    where each residual is 
 
