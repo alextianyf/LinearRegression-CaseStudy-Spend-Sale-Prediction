@@ -79,11 +79,12 @@ $$
    Let  
 
    $$r = y - X\beta
-     = \begin{pmatrix}r_1\\\vdots\\r_n\end{pmatrix},
+     = \begin{pmatrix}r_1\\\vdots\\r_n\end{pmatrix}
    $$  
-   where each residual is  
-   $$
-   r_i = y_i - x_i^\top\beta.$$
+
+   where each residual is 
+
+   $$r_i = y_i - x_i^\top\beta$$
 
 2. **Rewrite in dot‐product form**  
    By definition of the transpose,
