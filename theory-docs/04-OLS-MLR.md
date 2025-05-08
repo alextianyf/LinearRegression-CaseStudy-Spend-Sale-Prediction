@@ -38,7 +38,9 @@ so that our fitted values are $\hat y = X\beta$ and the residuals are $r = y - X
 > Why a column of 1’s?
 
 In multiple regression we write our predictions as  
-$$y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_p x_{ip}$$  
+
+$y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_p x_{ip}$ 
+
 To capture the constant term $\beta_0$ in matrix form, we prepend a column of 1’s to $X$:
 
 $$
@@ -73,15 +75,15 @@ $$
 ### Detailed proof
 
 1. **Define the residual vector**  
+   
    Let  
-   $$
-   r = y - X\beta
+
+   $$r = y - X\beta
      = \begin{pmatrix}r_1\\\vdots\\r_n\end{pmatrix},
    $$  
    where each residual is  
    $$
-   r_i = y_i - x_i^\top\beta.
-   $$
+   r_i = y_i - x_i^\top\beta.$$
 
 2. **Rewrite in dot‐product form**  
    By definition of the transpose,
