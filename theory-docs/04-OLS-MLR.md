@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
 # Derivation of the Ordinary Least Squares Estimator for Multiple Regression
 
 $y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_p x_{ip} + \varepsilon_i.$
@@ -78,12 +80,7 @@ $$
    
    Let  
 
-   <pre>
-    ```math
-    r = y - X\beta = \begin{pmatrix} r_1 \\ \vdots \\ r_n \end{pmatrix}
-    ```
-    </pre>
-
+   $r = y - X\beta = \begin{pmatrix} r_1 \\ \vdots \\ r_n \end{pmatrix}$
 
    where each residual is 
 
