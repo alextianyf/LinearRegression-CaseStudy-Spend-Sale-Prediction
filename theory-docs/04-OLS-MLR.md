@@ -39,7 +39,7 @@ so that our fitted values are $\hat y = X\beta$ and the residuals are $r = y - X
 
 In multiple regression we write our predictions as  
 $$
-\hat y_i = \beta_0 + \beta_1 x_{i1} + \dots + \beta_p x_{ip}.
+\hat y_i = \beta_0 + \beta_1 x_{i1} + \dots + \beta_p x_{ip}
 $$  
 To capture the constant term $\beta_0$ in matrix form, we prepend a column of 1’s to $X$:
 
