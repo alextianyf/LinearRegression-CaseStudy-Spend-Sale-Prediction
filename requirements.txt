@@ -1,6 +1,8 @@
+# Core scientific and data packages
 pandas==2.2.2
 numpy==2.0.2
 matplotlib==3.9.1
 seaborn==0.13.2
 scikit-learn==1.5.2
 statsmodels==0.14.4
+scipy==1.13.1
