@@ -49,6 +49,7 @@ def plot_iqr_outliers_with_boxplot(df, features=None, figsize=(14, 5), point_alp
         ax_scatter.axhline(upper_bound, color='brown', linestyle='dotted', linewidth=2,
                         label=f'Upper Bound: {upper_bound:.2f}')
         ax_scatter.set_ylim(y_min, y_max)
+        ax_scatter.set_title(f'IQR Outlier Detection for {feature}')
 
         # Boxplot
         ax_box = axes[i][1] if n_plots > 1 else axes[1]
@@ -56,6 +57,7 @@ def plot_iqr_outliers_with_boxplot(df, features=None, figsize=(14, 5), point_alp
                     boxprops=dict(facecolor='lightgray'),
                     whis=1.5)
         ax_box.set_ylim(y_min, y_max)
+        ax_box.set_title(f'Boxplot for {feature}')
 
     plt.tight_layout()
     plt.show()
