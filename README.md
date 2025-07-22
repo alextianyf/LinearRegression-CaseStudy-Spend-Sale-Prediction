@@ -30,11 +30,21 @@ Rather than relying heavily on pre-built libraries, this project emphasizes **ma
 
 ## Table of Contents
 
-- [Project Background](#project-background)
-- [Project Objective](#project-objective)
-  - [Part 1: Simple Linear Regression - Sales vs. TV Advertising Budget](#part-1-simple-linear-regression---sales-vs-tv-advertising-budget)
-  - [Part 2: Multiple Linear Regression](#part-2-multiple-linear-regression)
-- [Important Questions That We Might Seek to Address](#important-questions-that-we-might-seek-to-address)
+- [Linear Regression Case Study – Sales vs. Advertising Budget](#linear-regression-case-study--sales-vs-advertising-budget)
+  - [Table of Contents](#table-of-contents)
+  - [Project Background](#project-background)
+  - [Project Objective](#project-objective)
+    - [Part 1: Simple Linear Regression - Sales vs. TV Advertising Budget](#part-1-simple-linear-regression---sales-vs-tv-advertising-budget)
+    - [Part 2: Multiple Linear Regression](#part-2-multiple-linear-regression)
+  - [File Structure](#file-structure)
+  - [Development Environment Setup (with Virtual Environment)](#development-environment-setup-with-virtual-environment)
+    - [Recommended Configuration](#recommended-configuration)
+    - [1. Creating Virtual Environment](#1-creating-virtual-environment)
+    - [2. Active the Virtual Environment(On Windows, the activation command may differ)](#2-active-the-virtual-environmenton-windows-the-activation-command-may-differ)
+    - [3. Select the Python Interpreter in VS Code](#3-select-the-python-interpreter-in-vs-code)
+    - [4. Install `ipykernel` (Recommended Version: 6.29.5)](#4-install-ipykernel-recommended-version-6295)
+    - [5. Install Project Dependencies](#5-install-project-dependencies)
+  - [Attribution \& Licensing](#attribution--licensing)
 
 ---
 
@@ -50,6 +60,8 @@ Rather than relying heavily on pre-built libraries, this project emphasizes **ma
 ---
 
 ## Project Objective
+
+This section outlines the key learning objectives and concepts you will explore throughout each part of the project. It serves as a roadmap for what you'll gain by completing the Simple and Multiple Linear Regression case studies.
 
 ### Part 1: Simple Linear Regression - Sales vs. TV Advertising Budget
 
@@ -166,6 +178,35 @@ Rather than relying heavily on pre-built libraries, this project emphasizes **ma
 
 ---
 
+## File Structure
+
+This section provides a detailed overview of the project directory structure, helping you understand where key files and resources are located.
+
+```text
+.
+├── .venv/                                # (Not included) Virtual environment folder
+├── data/
+│   ├── Advertising_simple.csv            # Dataset for Simple Linear Regression
+│   └── Advertising.csv                   # Dataset for Multiple Linear Regression
+├── images/                               # Conceptual illustrations and plots (exported from notebooks)
+├── notebooks/                            # Main exploratory and explanatory Jupyter Notebooks
+│   ├── 01-Simple-LinearRegression.ipynb
+│   └── 02-Multiple-LinearRegression.ipynb
+├── spend_sale_lib/                       # Custom Python module for reusable components
+│   ├── feature-selection.py              # Manually implemented forward & backward selection
+│   ├── Gradient_Descend.py               # Manual implementation of Gradient Descent algorithm
+│   ├── IQR.py                            # IQR-based denoising helper
+│   └── OLS.py                            # Manual implementation of OLS (Ordinary Least Squares)
+├── theory-docs/                          # Supplementary theoretical documents and derivations
+│   ├── 01-OLS-single-variable.md         # Mathematical proof for single-variable OLS
+│   ├── 02-variance-stddev-stderr.md      # Concepts: Variance, Standard Deviation, Standard Error
+│   ├── 03-SE-single-variable.ipynb       # Step-by-step derivation of Standard Error (single variable)
+│   └── 04-OLS-MLR.ipynb                  # OLS derivation for Multiple Linear Regression
+├── LICENSE                               # MIT License
+├── README.md                             # Project overview (you are here)
+└── requirements.txt                      # Required Python packages to run the project
+```
+
 ## Development Environment Setup (with Virtual Environment)
 
 > Note: These instructions are for macOS. Setup may differ slightly on Windows.
@@ -239,7 +280,7 @@ pip install -r requirements.txt
 
 ## Attribution & Licensing
 
-This project uses the `Advertising.csv` dataset originally featured in the book:
+This project uses the `Advertising_simple.csv` and `Advertising.csv` dataset originally featured in the book:
 
 **"An Introduction to Statistical Learning"** by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani.  
 The dataset is used here strictly for **educational and demonstration purposes**.
