@@ -6,8 +6,8 @@ This portfolio project provides a comprehensive introduction to **Linear Regress
 - **Multiple Linear Regression**: Extend the model to predict **Sales** using **TV**, **Radio**, and **Newspaper** advertising budgets.
 
 <div align="center">
-  <img src="images/SLR.png" alt="Simple Linear Regression" height="450"/>
-  <img src="images/MLR.png" alt="Multiple Linear Regression" height="450"/>
+  <img src="images/SLR.png" alt="Simple Linear Regression" height="250"/>
+  <img src="images/MLR.png" alt="Multiple Linear Regression" height="250"/>
 </div>
 
 This project is designed as a **beginner-friendly starting point** for those looking to step into the world of **Machine Learning**. It also serves as a solid foundation for anyone who wants a **deep understanding of linear regression**, especially focusing on the following core concepts:
@@ -31,19 +31,21 @@ Rather than relying heavily on pre-built libraries, this project emphasizes **ma
 ## Table of Contents
 
 - [Project Background](#project-background)
-- [Objective](#objective)
+- [Project Objective](#project-objective)
 - [Important Questions That We Might Seek to Address](#important-questions-that-we-might-seek-to-address)
 
 ---
 
 ## Project Background
 
-- Suppose that we are statistical consultants hired by a client to investigate the association between advertising and sales of a particular product.
-- We are provided the dataset consists of the **sales** of one particular product in 200 diferent markets, along with advertising budgets for the product in each of those markets for three diferent media: **TV**, **Radio**, and **newspaper**.
-- Client has **full control** of advertising expenses in each of the three media.
-- If we determine that there is an association between advertising and alses, then we can instruct our client to adjust advertising budgets, thereby indirectly increasing sales.
+- Suppose we are statistical consultants hired by a client to investigate the relationship between advertising and product sales.
+- We are provided with a dataset containing the **sales** of a particular product in **200 different markets**, along with the **advertising budgets** for three different media channels: **TV**, **Radio**, and **Newspaper**.
+  - In the **Simple Linear Regression** case study, we analyze the relationship between **Sales** and **TV advertising** only.
+  - In the **Multiple Linear Regression** case study, we explore how **Sales** relate to **TV**, **Radio**, and **Newspaper** advertising budgets.
+- The client has **full control** over the advertising expenditures across all three media.
+- If we find a significant association between advertising and sales, we can advise the client on how to **reallocate or optimize their ad budget** to potentially boost sales.
 
-## Objective
+## Project Objective
 
 - This is designed as portfolio project, and mainly is designed to demonstrate the understanding of linear regression. We may not discuss the motivation of why using linear regression instead of other algorithms for this application.
 - Our goal is to develop an accurate model that can be used to predict sales on the basis of the three media budgets.
