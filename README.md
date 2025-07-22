@@ -33,7 +33,7 @@ Rather than relying heavily on pre-built libraries, this project emphasizes **ma
 - [Project Background](#project-background)
 - [Project Objective](#project-objective)
   - [Part 1: Simple Linear Regression - Sales vs. TV Advertising Budget](#part-1-simple-linear-regression---sales-vs-tv-advertising-budget)
-- [❓ Important Questions That We Might Seek to Address](#important-questions-that-we-might-seek-to-address)
+  - [Part 2: Multiple Linear Regression](#part-2-multiple-linear-regression)
 - [Important Questions That We Might Seek to Address](#important-questions-that-we-might-seek-to-address)
 
 ---
@@ -53,7 +53,7 @@ Rather than relying heavily on pre-built libraries, this project emphasizes **ma
 
 ### Part 1: Simple Linear Regression - Sales vs. TV Advertising Budget
 
-This phase focuses on building a solid foundation in both **data science tools** and **core statistical concepts** through the use case of predicting **Sales** based on **TV advertising budget**. The core topics covered are listed as following
+> This phase focuses on building a solid foundation in both **data science tools** and **core statistical concepts** through the use case of predicting **Sales** based on **TV advertising budget**. The core topics covered are listed as following
 
 - **Fundamental Python Libraries**:
   - `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `scipy`
@@ -84,7 +84,7 @@ This phase focuses on building a solid foundation in both **data science tools**
   - Measuring correlation between **TV ad spend** and **Sales**
   - Interpreting correlation coefficients
 
-- **Residual Sum of Squares (RSS)** Optimization:
+- Develop an accurate model by understanding **Residual Sum of Squares (RSS)** Optimization:
   - Manually compute OLS (Ordinary Least Squares) solution
   - Implement Gradient Descent from scratch to estimate coefficients
   - Compare results from:
@@ -122,45 +122,49 @@ This phase focuses on building a solid foundation in both **data science tools**
 
 ---
 
-### 📘 Part 2: Multiple Linear Regression *(Coming Soon)*
+### Part 2: Multiple Linear Regression
 
-> This section will expand the analysis to include **TV**, **Radio**, and **Newspaper** as predictors of Sales.
+> This section expands the analysis to include **TV**, **Radio**, and **Newspaper** as predictors of Sales.
 
-## Project Objective
+- Develop an accurate model to predict **Sales** using all three media budgets: **TV**, **Radio**, and **Newspaper**.
+  - Manually derive the OLS solution using **linear algebra for multivariable regression**.
+  - Compare results with the built-in implementation from **scikit-learn**.
 
-- For Simple linear regression, we will focus on
-  - the foundamental data science module such as pandas, numpy, matplotlib, seaborn, scikit-learn, and scipy.
-  - Loading data and dataframe manipulation(conditional filtering, dropping, and etc..).
-  - Data Visualization, such as Scatterplot and histogram. and histogram interpretaion by deeply understanding histogram, including different rule of selecting bin size(Freedman–Diaconis rule, and other rules)
-  - Understanding descriptive statistic such as mean, median, mode, min, max, standard deviation, 25 and 75 quatile, and how they help to understand dataset with visualization.
-  - Understanding the downside of noise, why it is terrible, and how IQR can help to denoise our dataset.
-  - Understanding and interpret correlation, which can help us confirm the relation between TV and sale.
-  - Model fitting by understanding the process of optimizing RSS(residual sum of square) with multiple approached: manually driven OLS . manual implementation gradient descending to find coefficient. Compare the result from Numpy and Scikit-learn calculated result. Briefly compare the OLS and Gradient Desending pros and cons. Lastly, interpret the result of best coefficient.
-  - Deeply understanding what is hypothesis testing with t-statistic, and p-value. How to use p-value to make decision wether support or reject null hypothesis. Interpreting different coefficients Std. Error , t-value, and p-value.
-  - Evaluate Coefficient Accuracy by deeply understanding confidence interval. And confidence interval result interpretation.
-  - Model Evaluation by understanding Residual Standard Error(RSE) and R² Statistic, and interpret the result.
-  - According to the finding, discuss about key business questions and answer:
-    - Q1: How does TV advertising affect product sales?
-    - Q2: Can we quantify the return on every additional dollar spent on TV?
-    - Q3: Is the relationship between TV spend and sales statistically significant?
-    - Q4: How accurate is our model in predicting future sales?
-    - Q5: To what extent can we rely on TV advertising alone for sales forecasting?
-    - Q6: What is the expected sales level if no advertising budget is allocated?
-  - According to the finding, Discuss model limitation
-  - According to the finding, DIscuss Strategic Recommendations Based on Findings
+- **Why Multiple Regression?**
+  - Use the **correlation matrix** to understand why separate simple regressions may be misleading.
+  - Justify the need for multivariable modeling to account for interaction and shared variance.
 
-- This is designed as portfolio project, and mainly is designed to demonstrate the understanding of linear regression. We may not discuss the motivation of why using linear regression instead of other algorithms for this application.
-- Our goal is to develop an accurate model that can be used to predict sales on the basis of the three media budgets.
+- **Variable Selection & Hypothesis Testing**:
+  - Perform **F-statistic testing** to evaluate overall model significance.
+  - Use **p-values**, **forward selection**, and **backward elimination** to identify important predictors.
 
-## Important Questions that We Might Seek to Address
+- **Model Evaluation**:
+  - Assess model performance using:
+    - **Residual Standard Error (RSE)**
+    - **R² (Coefficient of Determination)**
 
-1. Is there a relationship between advertising budget and sales?
-2. How strong is the relationship between advertising budget and sales?
-3. Which media are associated with sales?
-4. How large is the association between each medium and sales?
-5. How accurately can we predict future sales?
-6. Is the relationship linear?
-7. Is there synergy among the advertising media?
+- **Prediction & Inference**:
+  - Make predictions using both:
+    - **Confidence Intervals (CI)** – for estimating the mean response
+    - **Prediction Intervals (PI)** – for forecasting individual outcomes
+  - Interpret the differences between CI and PI in context.
+
+- **Interaction Effects (Synergy)**:
+  - Explore whether combinations of media (e.g., TV + Radio) have an **amplified effect** on sales.
+  - Investigate interaction terms in the regression model.
+
+- **Model Diagnostics**:
+  - Check for **linearity assumption** using residual plots and diagnostic tools.
+
+- Based on the findings, we aim to answer:
+  - **Q1**: **Is there a relationship** between sales and advertising budget?
+  - **Q2**: **Which media** are significantly associated with sales?
+  - **Q3**: **How strong** is the relationship?
+  - **Q4**: **How large** is the association between each medium and sales?
+  - **Q5**: **Is there synergy** among the advertising media?
+  - **Q6**: **Is the relationship linear?**
+
+---
 
 ## Development Environment Setup (with Virtual Environment)
 
