@@ -6,8 +6,8 @@ This portfolio project provides a comprehensive introduction to **Linear Regress
 - **Multiple Linear Regression**: Extend the model to predict **Sales** using **TV**, **Radio**, and **Newspaper** advertising budgets.
 
 <div align="center">
-  <img src="images/SLR.png" alt="Simple Linear Regression" height="250"/>
-  <img src="images/MLR.png" alt="Multiple Linear Regression" height="250"/>
+  <img src="images/SLR.png" alt="Simple Linear Regression" height="300"/>
+  <img src="images/MLR.png" alt="Multiple Linear Regression" height="300"/>
 </div>
 
 This project is designed as a **beginner-friendly starting point** for those looking to step into the world of **Machine Learning**. It also serves as a solid foundation for anyone who wants a **deep understanding of linear regression**, especially focusing on the following core concepts:
