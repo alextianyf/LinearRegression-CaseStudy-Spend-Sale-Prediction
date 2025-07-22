@@ -32,6 +32,8 @@ Rather than relying heavily on pre-built libraries, this project emphasizes **ma
 
 - [Project Background](#project-background)
 - [Project Objective](#project-objective)
+  - [Part 1: Simple Linear Regression - Sales vs. TV Advertising Budget](#part-1-simple-linear-regression---sales-vs-tv-advertising-budget)
+- [❓ Important Questions That We Might Seek to Address](#important-questions-that-we-might-seek-to-address)
 - [Important Questions That We Might Seek to Address](#important-questions-that-we-might-seek-to-address)
 
 ---
@@ -45,7 +47,107 @@ Rather than relying heavily on pre-built libraries, this project emphasizes **ma
 - The client has **full control** over the advertising expenditures across all three media.
 - If we find a significant association between advertising and sales, we can advise the client on how to **reallocate or optimize their ad budget** to potentially boost sales.
 
+---
+
 ## Project Objective
+
+### Part 1: Simple Linear Regression - Sales vs. TV Advertising Budget
+
+This phase focuses on building a solid foundation in both **data science tools** and **core statistical concepts** through the use case of predicting **Sales** based on **TV advertising budget**. The core topics covered are listed as following
+
+- **Fundamental Python Libraries**:
+  - `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `scipy`
+
+- **Data Loading & Manipulation**:
+  - Reading data into DataFrames
+  - Conditional filtering
+  - Dropping rows or columns
+  - Data dropping
+
+- **Data Visualization**:
+  - Creating scatterplots and histograms
+  - Interpreting scatterplot and histograms
+  - Understanding different binning strategies:
+    - **Freedman–Diaconis rule**
+    - Other commonly used rules
+
+- **Descriptive Statistics**:
+  - Mean, median, mode, min, max, standard deviation
+  - 25th and 75th percentiles (quartiles)
+  - Connecting descriptive stats with visual insights
+
+- **Noise and Outliers**:
+  - Why noise negatively affects models
+  - Using **IQR (Interquartile Range)** to detect and reduce noise
+
+- **Correlation Analysis**:
+  - Measuring correlation between **TV ad spend** and **Sales**
+  - Interpreting correlation coefficients
+
+- **Residual Sum of Squares (RSS)** Optimization:
+  - Manually compute OLS (Ordinary Least Squares) solution
+  - Implement Gradient Descent from scratch to estimate coefficients
+  - Compare results from:
+    - Manual OLS
+    - Gradient Descent
+    - Built-in tools (`numpy`, `scikit-learn`)
+  - Discuss pros and cons of OLS vs. Gradient Descent
+  - Interpret the best-fitting coefficient in a business context
+
+- **Hypothesis Testing**:
+  - Understanding **t-statistic** and **p-value**
+  - Using p-value to support or reject the null hypothesis
+  - Interpreting coefficient outputs: Standard Error, t-value, p-value
+
+- **Confidence Intervals**:
+  - Building 95% confidence intervals for coefficients
+  - Interpreting CI bounds and model reliability
+
+- **Performance Metrics**:
+  - **Residual Standard Error (RSE)**
+  - **R² (Coefficient of Determination)**
+  - Interpret what these values mean for model accuracy and predictive power
+
+- Based on model findings, we will explore and answer key business questions:
+  - **Q1**: How does TV advertising affect product sales?
+  - **Q2**: Can we quantify the return on every additional dollar spent on TV?
+  - **Q3**: Is the relationship between TV spend and sales statistically significant?
+  - **Q4**: How accurate is our model in predicting future sales?
+  - **Q5**: To what extent can we rely on TV advertising alone for sales forecasting?
+  - **Q6**: What is the expected sales level if no advertising budget is allocated?
+
+- Discuss **model limitations** based on findings
+
+- Provide **strategic business recommendations** derived from the analysis
+
+---
+
+### 📘 Part 2: Multiple Linear Regression *(Coming Soon)*
+
+> This section will expand the analysis to include **TV**, **Radio**, and **Newspaper** as predictors of Sales.
+
+## Project Objective
+
+- For Simple linear regression, we will focus on
+  - the foundamental data science module such as pandas, numpy, matplotlib, seaborn, scikit-learn, and scipy.
+  - Loading data and dataframe manipulation(conditional filtering, dropping, and etc..).
+  - Data Visualization, such as Scatterplot and histogram. and histogram interpretaion by deeply understanding histogram, including different rule of selecting bin size(Freedman–Diaconis rule, and other rules)
+  - Understanding descriptive statistic such as mean, median, mode, min, max, standard deviation, 25 and 75 quatile, and how they help to understand dataset with visualization.
+  - Understanding the downside of noise, why it is terrible, and how IQR can help to denoise our dataset.
+  - Understanding and interpret correlation, which can help us confirm the relation between TV and sale.
+  - Model fitting by understanding the process of optimizing RSS(residual sum of square) with multiple approached: manually driven OLS . manual implementation gradient descending to find coefficient. Compare the result from Numpy and Scikit-learn calculated result. Briefly compare the OLS and Gradient Desending pros and cons. Lastly, interpret the result of best coefficient.
+  - Deeply understanding what is hypothesis testing with t-statistic, and p-value. How to use p-value to make decision wether support or reject null hypothesis. Interpreting different coefficients Std. Error , t-value, and p-value.
+  - Evaluate Coefficient Accuracy by deeply understanding confidence interval. And confidence interval result interpretation.
+  - Model Evaluation by understanding Residual Standard Error(RSE) and R² Statistic, and interpret the result.
+  - According to the finding, discuss about key business questions and answer:
+    - Q1: How does TV advertising affect product sales?
+    - Q2: Can we quantify the return on every additional dollar spent on TV?
+    - Q3: Is the relationship between TV spend and sales statistically significant?
+    - Q4: How accurate is our model in predicting future sales?
+    - Q5: To what extent can we rely on TV advertising alone for sales forecasting?
+    - Q6: What is the expected sales level if no advertising budget is allocated?
+  - According to the finding, Discuss model limitation
+  - According to the finding, DIscuss Strategic Recommendations Based on Findings
 
 - This is designed as portfolio project, and mainly is designed to demonstrate the understanding of linear regression. We may not discuss the motivation of why using linear regression instead of other algorithms for this application.
 - Our goal is to develop an accurate model that can be used to predict sales on the basis of the three media budgets.
