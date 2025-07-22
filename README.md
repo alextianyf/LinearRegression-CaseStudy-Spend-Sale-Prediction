@@ -1,18 +1,51 @@
-# Linear Regression Case Study - Sales VS Advertising budget
+# Linear Regression Case Study – Sales vs. Advertising Budget
 
-> This is a Linear Regression portfolio project. Thus, this project focuses on <strong>Simple Linear Regression</strong> and its <strong>interpretability, foundational importance, and relevance in statistical learning</strong>. Even though it is necessary to discuss the best machine learning approach to solve this problem, this will not included in current stage, and may be discussed in the future work.
+This portfolio project provides a comprehensive introduction to **Linear Regression** through hands-on case studies. It is structured in two major parts:
+
+- **Simple Linear Regression**: Develop a model to predict **Sales** based solely on **TV advertising budget**.
+- **Multiple Linear Regression**: Extend the model to predict **Sales** using **TV**, **Radio**, and **Newspaper** advertising budgets.
+
+<div align="center">
+  <img src="images/SLR.png" alt="Simple Linear Regression" height="450"/>
+  <img src="images/MLR.png" alt="Multiple Linear Regression" height="450"/>
+</div>
+
+
+---
+
+### Project Purpose
+
+This project is designed as a **beginner-friendly starting point** for those looking to step into the world of **Machine Learning**. It also serves as a solid foundation for anyone who wants a **deep understanding of linear regression**, especially focusing on the following core concepts:
+
+- Ordinary Least Squares (OLS)
+- Gradient Descent
+- Hypothesis Testing
+- Manual Derivations & Explanations (not just library-based modeling)
+- And other concepts...
+
+Rather than relying heavily on pre-built libraries, this project emphasizes **manual implementation** and **theoretical insight**, helping you build true intuition about how linear regression works.
+
+**NOTES:**
+
+[1] This project emphasizes the **interpretability**, **theoretical foundation**, and **statistical learning relevance** of linear regression.
+[2] While real-world machine learning problems may call for alternative models, **this project focuses exclusively on linear regression** to maintain clarity and depth.
+[3] Advanced topics such as **regularization techniques** (e.g., Lasso), **train-test splits**, and other topics are intentionally excluded to preserve focus on core regression concepts.
+
+---
+
+## Background
 
 - Suppose that we are statistical consultants hired by a client to investigate the association between advertising and sales of a particular product.
 - We are provided the dataset consists of the **sales** of one particular product in 200 diferent markets, along with advertising budgets for the product in each of those markets for three diferent media: **TV**, **Radio**, and **newspaper**.
 - Client has **full control** of advertising expenses in each of the three media.
 - If we determine that there is an association between advertising and alses, then we can instruct our client to adjust advertising budgets, thereby indirectly increasing sales.
 
-# Objective
+## Objective
 
 - This is designed as portfolio project, and mainly is designed to demonstrate the understanding of linear regression. We may not discuss the motivation of why using linear regression instead of other algorithms for this application.
 - Our goal is to develop an accurate model that can be used to predict sales on the basis of the three media budgets.
 
-# Important Questions that We Might Seek to Address
+## Important Questions that We Might Seek to Address
 
 1. Is there a relationship between advertising budget and sales?
 2. How strong is the relationship between advertising budget and sales?
@@ -62,9 +95,11 @@ source venv/bin/active
 
 ### 3. Select the Python Interpreter in VS Code
 
-1. Press **`Cmd + Shift + P`** to open the Command Palette  
-2. Search for: **`Python: Select Interpreter`**  
-3. Choose the one that points to `./.venv`
+Step 1: Press **`Cmd + Shift + P`** to open the Command Palette  
+
+Step 2: Search for: **`Python: Select Interpreter`**  
+
+Step 3: Choose the one that points to `./.venv`
 
 ---
 
