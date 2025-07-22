@@ -1,4 +1,4 @@
-# Spend-Sale-Prediction
+# Linear Regression Case Study - Sales VS Advertising budget
 
 > This is a Linear Regression portfolio project. Thus, this project focuses on <strong>Simple Linear Regression</strong> and its <strong>interpretability, foundational importance, and relevance in statistical learning</strong>. Even though it is necessary to discuss the best machine learning approach to solve this problem, this will not included in current stage, and may be discussed in the future work.
 
@@ -22,30 +22,84 @@
 6. Is the relationship linear?
 7. Is there synergy among the advertising media?
 
-## Environment
+## Development Environment Setup (with Virtual Environment)
 
-- Check/create your own environment
+> Note: These instructions are for macOS. Setup may differ slightly on Windows.
+
+### Recommended Configuration
+
+- Operating System: MacOS
+
+- Recommended Python Version: 3.12.4
+
+- Integrated Development Environment: Visual Studio Code (VS Code)
+
+---
+
+### 1. Creating Virtual Environment
+
+Open your terminal in the project root directory and run:
 
 ```bash
-pip freeze > requirements.txt
+python3 -m venv .venv
 ```
 
-- Replace the requirements.txt file with provided version.
-- install with command:
+> It’s common practice to name the environment .venv. Most certainly, you could rename it accordingly.
+
+To open a terminal in VS Code, use the shortcut: Ctrl + backtick ()
+
+---
+
+### 2. Active the Virtual Environment(On Windows, the activation command may differ)
+
+Run the following command in your terminal:
+
+```bash
+source venv/bin/active
+```
+
+---
+
+### 3. Select the Python Interpreter in VS Code
+
+1. Press **`Cmd + Shift + P`** to open the Command Palette  
+2. Search for: **`Python: Select Interpreter`**  
+3. Choose the one that points to `./.venv`
+
+---
+
+### 4. Install `ipykernel` (Recommended Version: 6.29.5)
+
+```bash
+pip install ipykernel==6.29.5
+```
+
+> To verify or check your ipykernel installation version: `pip show ipykernel`
+
+---
+
+### 5. Install Project Dependencies
+
+Install all required packages from the `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 📚 Attribution & Licensing
+> You can modify or create your own environment by `pip freeze > requirements.txt`  
+> you can use command `pip list` to list all installed packages
+
+---
+
+## Attribution & Licensing
 
 This project uses the `Advertising.csv` dataset originally featured in the book:
 
 **"An Introduction to Statistical Learning"** by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani.  
 The dataset is used here strictly for **educational and demonstration purposes**.
 
-- 📄 All code in this repository is licensed under the [MIT License](./LICENSE).
-- 📘 Notebooks and teaching materials are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), allowing you to remix, adapt, and build upon the material for any purpose, even commercially, **as long as credit is given to the original author** (Alex Tian).
+- All code in this repository is licensed under the [MIT License](./LICENSE).
+- Notebooks and teaching materials are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), allowing you to remix, adapt, and build upon the material for any purpose, even commercially, **as long as credit is given to the original author** (Alex Tian).
 - The original materials and resources can be found in [ISL Website](https://www.statlearning.com/resources-python)
 
 > If you wish to use the dataset for commercial use beyond education, please refer to the book publisher’s terms and conditions.
