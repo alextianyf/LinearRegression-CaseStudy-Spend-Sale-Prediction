@@ -10,11 +10,6 @@ This portfolio project provides a comprehensive introduction to **Linear Regress
   <img src="images/MLR.png" alt="Multiple Linear Regression" height="450"/>
 </div>
 
-
----
-
-### Project Purpose
-
 This project is designed as a **beginner-friendly starting point** for those looking to step into the world of **Machine Learning**. It also serves as a solid foundation for anyone who wants a **deep understanding of linear regression**, especially focusing on the following core concepts:
 
 - Ordinary Least Squares (OLS)
@@ -27,13 +22,21 @@ Rather than relying heavily on pre-built libraries, this project emphasizes **ma
 
 **NOTES:**
 
-[1] This project emphasizes the **interpretability**, **theoretical foundation**, and **statistical learning relevance** of linear regression.
-[2] While real-world machine learning problems may call for alternative models, **this project focuses exclusively on linear regression** to maintain clarity and depth.
+[1] This project emphasizes the **interpretability**, **theoretical foundation**, and **statistical learning relevance** of linear regression.  
+[2] While real-world machine learning problems may call for alternative models, **this project focuses exclusively on linear regression** to maintain clarity and depth.  
 [3] Advanced topics such as **regularization techniques** (e.g., Lasso), **train-test splits**, and other topics are intentionally excluded to preserve focus on core regression concepts.
 
 ---
 
-## Background
+## Table of Contents
+
+- [Project Background](#project-background)
+- [Objective](#objective)
+- [Important Questions That We Might Seek to Address](#important-questions-that-we-might-seek-to-address)
+
+---
+
+## Project Background
 
 - Suppose that we are statistical consultants hired by a client to investigate the association between advertising and sales of a particular product.
 - We are provided the dataset consists of the **sales** of one particular product in 200 diferent markets, along with advertising budgets for the product in each of those markets for three diferent media: **TV**, **Radio**, and **newspaper**.
