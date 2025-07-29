@@ -231,7 +231,7 @@ python3 -m venv .venv
 
 > It’s common practice to name the environment .venv. Most certainly, you could rename it accordingly.
 
-To open a terminal in VS Code, use the shortcut: Ctrl + backtick ()
+To open a terminal in VS Code, use the shortcut: Ctrl + backtick (`)
 
 ---
 
