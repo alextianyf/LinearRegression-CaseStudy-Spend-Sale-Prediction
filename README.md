@@ -240,7 +240,7 @@ To open a terminal in VS Code, use the shortcut: Ctrl + backtick (`)
 Run the following command in your terminal:
 
 ```bash
-source venv/bin/active
+source .venv/bin/activate
 ```
 
 ---
